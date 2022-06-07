@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@500&family=Recursive:wght@600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    min-height: 70vh;
+    background: #16003B;
+    /* border-bottom: 0.5px solid hsla(0deg, 0%, 60%, 0.5); */
+    border-bottom-left-radius: 50px;
+}
+
+nav {
+    padding: 10px 0 10px 0;
+    min-height: 3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    margin-left: auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav2 { display: none;}
+
+.hero {
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.hero p {
+    color: white;
+}
+
+.hero > * { padding: 0; }
+
+.hero-text {
+    padding: 0;
+    font-size: 90px;
+    font-weight: 800;
+    background-image: url("../images/telaga-biru.jpg");
+    background-size: contain;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.wellcome {
+    font-size: 2rem;
+}
+
+main {
+    /* width: 100%; */
+    display: flex;
+}
+
+.content {
+    flex-basis: 70%;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.content > article {
+    margin-top: 2rem;
+}
+
+.content article p {
+    margin-top: 5px;
+}
+
+.wisata {
+    display: flex;
+}
+
+.wisata > * {
+    margin-right: 1rem;
+}
+
+.card {
+    width: 170px;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-image {
+    width: 150px;
+    height: 100px;
+}
+
+.card * {
+    font-size: 12px;
+}
+
+.card a {
+    display: block;
+}
+
+.card * + * {
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #2185d0;
+    color: white;
+    border: none;
+}
+
+aside {
+    flex-basis: 30%;
+    padding: 1rem;
+}
+
+.aside-card {
+    width: 200px;
+}
+
+.aside-card img { margin-left: 15px; }
+
+aside > * {
+    margin: 2rem auto;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 2rem;
+    min-height: 3rem;
+    color: white;
+    background: #F73D93;
+}
+
+@media only screen and (max-width: 750px) {
+    header {
+        border-radius: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav1 { display: none; }
+
+    .nav2 {
+        display: flex;
+    }
+    
+    .nav2 ul {
+        margin: 0 auto;
+    }
+
+    .nav2 ul li {
+        margin-right: 15px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .hero-text {
+        font-size: 32px;
+    }
+
+    .wellcome { font-size: 1rem; }
+
+    main { flex-direction: column; }
+
+    .wisata { flex-direction: column; }
+}
